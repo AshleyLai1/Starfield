@@ -85,5 +85,13 @@ class OddballParticle //inherits from Particle
 		myY= myY  + (int)(Math.random()*3)-1;
 	}
 }
+void mousePressed(){
+	for(int i=0;i<stars.length;i++){
+		stars[i].show();
+		stars[i].move();
+		myColor = color((int)(Math.random()*250),(int)(Math.random()*250),(int)(Math.random()*250));
+	}
+
+}
 
 
